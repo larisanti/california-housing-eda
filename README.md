@@ -1,1 +1,1 @@
-# california-housing-eda
+# California Housing Exploratory Data Analysis

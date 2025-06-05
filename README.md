@@ -12,22 +12,36 @@ The EDA is structured into five sections for a clear and logical flow:
 ### 1. Data Loading and Initial Exploration
 This section covers the initial steps of loading the California Housing dataset into a pandas DataFrame. It includes displaying the first and last few rows to get a glimpse of the data structure, checking data types and non-null counts using `.info()`, identifying missing values with `.isnull().sum()`, and calculating descriptive statistics using `.describe()` to understand the central tendency, spread, and potential outliers of the numerical features.
 
+---
 
 ### 2. Exploring Individual Features (Univariate Analysis)
 This section focuses on analyzing each feature independently. Visualizations such as box plots and histograms are used to understand the distribution of individual variables like Median Income, House Age, Average Rooms, Average Bedrooms, Population, Average Occupancy, and Median House Value. This helps in identifying the shape of distributions, potential skewness, and the presence of outliers.
 
+![Univariate Analysis](https://github.com/larisanti/california-housing-eda/blob/main/images/images%20for%20README.md/1-univariate.jpg)
+
+---
 
 ### 3. Exploring Relationships Between Features (Bivariate Analysis)
 This section investigates the relationships between pairs of features, particularly focusing on how other features relate to the target variable, Median House Value. Scatter plots and KDE plots are used to visualize these relationships, helping to identify potential correlations and dependencies that could be important for predictive modeling. Key relationships explored include Median Income vs. Median House Value and Average Rooms vs. Median House Value.
+
+![Bivariate Analysis](https://github.com/larisanti/california-housing-eda/blob/main/images/images%20for%20README.md/2-bivariate.jpg)
+
+---
 
 
 ### 4. Feature Engineering
 This section involves creating new features or transforming existing ones to potentially enhance the dataset's predictive power. Examples include categorizing House Age into distinct groups and creating per-person metrics like Estimated Median Income per Person and Bedrooms per Person by leveraging existing features like Average Occupancy. The distributions of these newly engineered features are also visualized.
 
+![Feature Engineering](https://github.com/larisanti/california-housing-eda/blob/main/images/images%20for%20README.md/3-features.jpg)
+
+---
 
 ### 5. Correlation Analysis
 This section quantifies the linear relationships between all numerical features in the dataset. A correlation matrix is calculated, and a heatmap is generated to visualize these correlations. This provides a clear overview of which features have strong linear relationships with each other and, importantly, with the target variable, Median House Value. This analysis helps in understanding the degree and direction of linear associations.
 
+![Correlation](https://github.com/larisanti/california-housing-eda/blob/main/images/images%20for%20README.md/4-correlation.jpg)
+
+---
 
 ## Key Findings
 
@@ -49,5 +63,5 @@ This section quantifies the linear relationships between all numerical features 
 *   **Overall Correlation:** The correlation heatmap confirms that `MedInc`, `Latitude`, and `Longitude` are the features most strongly linearly correlated with `MedHouseVal`.
 
 ---
-
-## To visualize the complete analysis, including all plots and code, refer to the **Jupyter Notebook** file: [california\_housing\_eda.ipynb](https://github.com/larisanti/california-housing-eda/blob/main/california_housing_eda.ipynb)
+For a complete look at the analysis, including all detailed plots and code, please refer to the Jupyter Notebook file: [california\_housing\_eda.ipynb](https://github.com/larisanti/california-housing-eda/blob/main/california_housing_eda.ipynb)
+---
